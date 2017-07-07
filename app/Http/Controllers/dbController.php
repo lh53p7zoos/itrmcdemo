@@ -14,6 +14,11 @@ class dbController extends Controller
 		return view('day3/index');
 	}
 
+    public function doctors(){
+    	$records=hprovider::paginate(20);
+    	return view('fin/doctors')->with('records',$records);
+    }
+	
     public function employees(){
     	$records=employees::all();
     	return view('day3/employees')->with('records',$records);
