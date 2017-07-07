@@ -38,4 +38,6 @@ Route::post('/procreg', 'dbController@proccessRegistration');
 Route::get('/register2', 'dbController@register');
 Route::get('/profile', 'dbController@profile');
 
-
+//Fin
+Route::get('/fin', 'dbController@fin');
+Route::get('/doctors', 'dbController@hproviders');
